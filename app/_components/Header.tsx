@@ -34,7 +34,7 @@ function Header() {
                                     className="block px-2 py-2 transition hover:text-indigo-600"
                                     href="#"
                                 >
-                                    About
+                                    Home
                                 </a>
                             </li>
                             <li>
@@ -50,7 +50,7 @@ function Header() {
                                     className="block px-2 py-2 transition hover:text-indigo-600"
                                     href="#"
                                 >
-                                    History
+                                    About
                                 </a>
                             </li>
                             <li>
