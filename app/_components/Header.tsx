@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "@/app/_components/Header.module.css"; // Import your CSS module
+import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import Link from "next/link";
 
 function Header() {
     // State to track the visibility of the mobile menu
@@ -67,18 +69,18 @@ function Header() {
 
                     <div className="flex items-center gap-4">
                         <div className=" sm:flex sm:gap-4">
-                            <a
+                            <span
                                 className="  rounded-md bg-gray-100  px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:bg-gray-300"
-                                href="#"
+                                
                             >
-                                Login
-                            </a>
-                            <a
+                                <LoginLink>Log in</LoginLink>
+                            </span>
+                            <span
                                 className="sm:block hidden rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition hover:text-white/75 hover:bg-indigo-800"
-                                href="#"
+                                
                             >
-                                SignUp
-                            </a>
+                                <RegisterLink>Sign up</RegisterLink>
+                            </span>
                         </div>
 
                         <button

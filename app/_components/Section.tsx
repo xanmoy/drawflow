@@ -1,4 +1,5 @@
 import React from 'react'
+import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 function Section() {
   return (
@@ -202,12 +203,12 @@ function Section() {
               </div>
 
               <div className="mt-12 text-center">
-                  <a
-                      href="#"
+                  <span
+                      
                       className="inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                   >
-                      Get Started Today
-                  </a>
+                      <RegisterLink>Get Started Today</RegisterLink>
+                  </span>
               </div>
           </div>
       </section>
