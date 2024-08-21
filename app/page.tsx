@@ -9,7 +9,7 @@ import Section from "./_components/Section";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gradient-to-br from-black via-[#19163d] to-black text-white">
       <Announcement/>
       <Header />
       <Hero />
