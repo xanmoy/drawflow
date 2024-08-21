@@ -1,0 +1,11 @@
+/* app/_components/Header.module.css */
+.navItems {
+    background: none;
+    /* Default state for larger screens */
+}
+
+@media (max-width: 640px) {
+    .navItems {
+        background: linear-gradient(to bottom right, black, #19163d, black);
+    }
+}
