@@ -82,7 +82,7 @@ function Header() {
                         </div>
 
                         <button
-                            className="block rounded bg-neutral-900 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+                            className="block rounded p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
                             onClick={toggleMenu}
                         >
                             <span className="sr-only">Toggle menu</span>
