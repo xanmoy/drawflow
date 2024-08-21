@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { RegisterLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 function Hero() {
   return (
@@ -27,16 +28,16 @@ function Hero() {
                   </p>
 
                   <div className="mt-8 flex flex-wrap justify-center gap-4">
-                      <a
+                      <span
                           className="block w-full rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-neutral-900 hover:bg-indigo-800 hover:border-indigo-800 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-                          href="#"
+                          
                       >
-                          Get Started
-                      </a>
+                          <RegisterLink>Get Started</RegisterLink> 
+                      </span>
 
                       <a
                           className="block w-full rounded border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-neutral-900 focus:outline-none focus:ring active:bg-indigo-500 sm:w-auto"
-                          href="#"
+                          href="/"
                       >
                           Learn More
                       </a>
