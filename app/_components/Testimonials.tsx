@@ -9,7 +9,7 @@ function Testimonials() {
               </h2>
 
               <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/10 hover:shadow-indigo-500/10 p-6 sm:p-8">
+                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/30 hover:shadow-indigo-500/40 p-6 sm:p-8">
                       <div className="flex items-center gap-4">
                           <img
                               alt=""
@@ -82,7 +82,7 @@ function Testimonials() {
                       </p>
                   </blockquote>
 
-                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/10 hover:shadow-indigo-500/10 p-6 sm:p-8">
+                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/30 hover:shadow-indigo-500/40 p-6 sm:p-8">
                       <div className="flex items-center gap-4">
                           <img
                               alt=""
@@ -155,7 +155,7 @@ function Testimonials() {
                       </p>
                   </blockquote>
 
-                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/10 hover:shadow-indigo-500/10 p-6 sm:p-8">
+                  <blockquote className="rounded-lg border border-gray-800 shadow-xl transition hover:border-indigo-500/30 hover:shadow-indigo-500/40 p-6 sm:p-8">
                       <div className="flex items-center gap-4">
                           <img
                               alt=""
