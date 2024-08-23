@@ -73,7 +73,7 @@ function Header() {
                                 className="  rounded-md bg-gray-100  px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:bg-gray-300"
                                 
                             >
-                                <LoginLink>Log in</LoginLink>
+                                <LoginLink postLoginRedirectURL="/dashboard" >Log in</LoginLink>
                             </span>
                             <span
                                 className="sm:block hidden rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition hover:text-white/75 hover:bg-indigo-800"
