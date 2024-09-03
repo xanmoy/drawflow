@@ -7,9 +7,26 @@ import { useMutation } from 'convex/react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
-
+import { toast } from 'sonner'
 
 function CreateTeam() {
+
+  const [teamName, setTeamName] = useState('');
+  const createTeam = useMutation(api.teams.createTeam);
+  const { user }: any = useKindeBrowserClient();
+  const router = useRouter();
+  const createNewTeam = () => {
+    createTeam({
+      teamName: teamName,
+      createdBy: user?.email
+    }).then(resp => {
+      console.log(resp);
+      if (resp) {
+        router.push('/dashboard')
+        toast('Team created successfully!!!')
+      }
+    })
+  }
   return (
     <div className='bg-neutral-900 text-white px-6 md:px-16 my-16'>
       <a className="flex text-white " href="/">
@@ -23,12 +40,12 @@ function CreateTeam() {
           <label className='text-gray-500'>Team Name</label>
           <Input placeholder='Team Name'
             className='mt-3 p-4'
-            // onChange={(e) => setTeamName(e.target.value)}
+            onChange={(e) => setTeamName(e.target.value)}
           />
         </div>
         <Button className='bg-indigo-600 mt-9 lg:w-[20%] md:w-[60%] sm:w-[60%] w-[65%] hover:bg-indigo-800'
-          // disabled={!(teamName && teamName?.length > 0)}
-          // onClick={() => createNewTeam()}
+          disabled={!(teamName && teamName?.length > 0)}
+          onClick={() => createNewTeam()}
         >Create Team</Button>
       </div>
     </div>
