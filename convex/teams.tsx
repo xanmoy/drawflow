@@ -12,10 +12,10 @@ export const getTeam = query({
     },
 })
 
-// export const createTeam = mutation({
-//     args: { teamName: v.string(), createdBy: v.string() },
-//     handler: async (ctx, args) => {
-//         const result = await ctx.db.insert('teams', args);
-//         return result;
-//     },
-// })
+export const createTeam = mutation({
+    args: { teamName: v.string(), createdBy: v.string() },
+    handler: async (ctx, args) => {
+        const result = await ctx.db.insert('teams', args);
+        return result;
+    },
+})
