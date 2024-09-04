@@ -19,7 +19,7 @@ function Header() {
             <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
                 <a className="flex text-white " href="/">
                     <Image src="/logo.svg" alt="DrawFlow" width={50} height={50} />
-                    <h1 className="pl-2 font-bold text-lg text-white">DrawFlow</h1>
+                    <h1 className="pl-2 font-semibold text-lg text-white">DrawFlow</h1>
                 </a>
 
                 <div className="flex flex-1 items-center justify-end md:justify-between">
